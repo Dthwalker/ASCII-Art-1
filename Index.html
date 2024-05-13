@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="title">ASCII Art</div>
+        <div class="inputs">
+            <label>
+                <input type="file" id="file">
+                Choise file
+            </label>
+            <div class="inp_p">
+                <div>symbol count: </div>
+                <div class="inner">10</div>
+                <input type="range" min="2" max="50" value="10">
+            </div>
+            <div class="inp_p">
+                <div>symbol size: </div>
+                <div class="inner">10</div>
+                <input type="range" min="2" max="50" value="10">
+            </div>
+            <div class="inp_p">
+                <div>Bright: </div>
+                <div class="inner">0</div>
+                <input type="range" min="-100" max="100" value="0">
+            </div>
+            <div class="inp_p">
+                <div>Contrast: </div>
+                <div class="inner">0</div>
+                <input type="range" min="-100" max="100" value="0">
+            </div>
+            <div class="inp_p">
+                <div>Img Size: </div>
+                <div class="inner"></div>
+                <input type="text" value="500">
+            </div>
+            <button id="colored">Monochrome</button>
+            <input type="text" id="sim" value=" .,:;-=+/*$%&@">
+            <div class="presets">
+                <div>Presets: </div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>0</button>
+            </div>
+            <button id="draw">Draw</button>
+        </div>
+
+        <canvas></canvas>
+    </div>
+    
+    <script type="module" src="/js/Main.js"></script>
+</body>
+</html>
